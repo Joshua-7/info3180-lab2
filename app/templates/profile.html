@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div>
+    <img src="{{url_for('static', filename ='beard.PNG')}}"/>
+    <h1 class="name">Errol Green</h1>
+    <h2 class="uname">@NoriStar</h2>
+    <h2 class="loc">St.Andrew, Jamaica</h2>
+    <h2 class="date">Joined May, 2019</h2>
+    <p>I'm a struggling university student in his final year. I like art and computer stuff.</p>
+</div>
+<div class="follow">
+    <div class="posts">
+        <h2>31</h2>
+        <h2>Posts</h2>
+    </div>
+    <div class="follows">
+        <h2>1050</h2>
+        <h2>Following</h2>
+    </div>
+    <div class="followers">
+        <h2>100</h2>
+        <h2>Followers</h2>
+    </div>
+    <button class="btn">Follow</button>
+</div>
+{% endblock %}
