@@ -1,27 +1,33 @@
 {% extends "base.html" %}
 
 {% block main %}
-<div>
-    <img src="{{url_for('static', filename ='beard.PNG')}}"/>
+<div class= "nameinfo">
+    <img class ="face" src="{{url_for('static', filename ='beard.PNG')}}"/>
     <h1 class="name">Errol Green</h1>
-    <h2 class="uname">@NoriStar</h2>
-    <h2 class="loc">St.Andrew, Jamaica</h2>
-    <h2 class="date">Joined May, 2019</h2>
-    <p>I'm a struggling university student in his final year. I like art and computer stuff.</p>
+    <h4 class="uname">@NoriStar</h4>
+    <h4 class="loc">St.Andrew, Jamaica</h4>
+    <h4 class="date">{{format_date_joined(7,5,2019)}}</h4>
 </div>
-<div class="follow">
-    <div class="posts">
-        <h2>31</h2>
-        <h2>Posts</h2>
-    </div>
-    <div class="follows">
-        <h2>1050</h2>
-        <h2>Following</h2>
-    </div>
-    <div class="followers">
-        <h2>100</h2>
-        <h2>Followers</h2>
-    </div>
-    <button class="btn">Follow</button>
+<div class="aboutme">
+    <p>I'm a struggling university student in his final year. I like art and computer stuff. Used to be a music guy until I lost my tune.
+        I still play a mad ukulele though.
+    </p>
+</div>
+<div class="followinfo">
+    <div class="follow">
+        <div class="posts">
+            <h2>31</h2>
+            <h5>Posts</h5>
+        </div>
+        <div class="follows">
+            <h2>1050</h2>
+            <h5>Following</h5>
+        </div>
+        <div class="followers">
+            <h2>100</h2>
+            <h5>Followers</h5>
+</div>
+</div>
+<button class="btn">Follow</button>
 </div>
 {% endblock %}

@@ -1,3 +1,42 @@
 body {
     padding-top: 5rem;
 }
+.nameinfo 
+{
+    background-color:#63B3ED;
+}
+.name
+{
+    color:white;
+    text-align: center;
+    text-shadow: 2px 2px 5px black
+}
+h4
+{
+    color:white;
+    text-align: center;
+    text-shadow: 2px 2px 5px black
+}
+.face
+{
+    display: block;
+    border: 2px solid#63B3ED;
+    padding: 5px;
+    border-radius: 150px;
+    max-width: 15%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.aboutme
+{
+    text-align: center;
+    color: rgb(163, 156, 156)
+}
+
+.followinfo
+{
+    display: flex;
+    flex-direction: row;
+}
